@@ -1,2 +1,3 @@
-# opa-styra-das
-OPA / Styra DAS tutorial with .NET 8 Minimal API and Identity Server
+# .NET: OPA with Styra DAS
+This tutorial demonstrates how to set up Open Policy Agent (OPA) with Styra DAS (FREE) to learn how to implement OPA policy with .NET and Identity Server v6.   
+
