@@ -4,14 +4,10 @@ var builder = WebApplication.CreateSlimBuilder(args);
 
 var app = builder.Build();
 
-var sampleTodos = TodoGenerator.GenerateTodos().ToArray();
+var securityApi = app.MapGroup("/api/security/grid");
+securityApi.MapGet("/", () => Results.Ok("Access Granted Security Grid!"));
 
-var todosApi = app.MapGroup("/todos");
-todosApi.MapGet("/", () => sampleTodos);
-todosApi.MapGet("/{id}", (int id) =>
-    sampleTodos.FirstOrDefault(a => a.Id == id) is { } todo
-        ? Results.Ok(todo)
-        : Results.NotFound());
+var systemApi = app.MapGroup("api/system/test");
+systemApi.MapGet("/", () => Results.Ok("Access Granted to System Test!"));
 
 app.Run();
-
