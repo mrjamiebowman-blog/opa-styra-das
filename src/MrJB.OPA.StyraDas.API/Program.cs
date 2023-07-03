@@ -8,4 +8,7 @@ securityApi.MapGet("/", () => Results.Ok("Access Granted Security Grid!"));
 var systemApi = app.MapGroup("api/system/test");
 systemApi.MapGet("/", () => Results.Ok("Access Granted to System Test!"));
 
+var upApi = app.MapGroup("api/up");
+upApi.MapGet("/", () => Results.Ok("UP"));
+
 app.Run();
