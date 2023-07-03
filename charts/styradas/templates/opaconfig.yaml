@@ -9,7 +9,7 @@ data:
       name: discovery
       service: styra
     labels:
-      system-id: c3199390d3df481099e3a14c900d4dbd
+      system-id: be73004cea78472da407b1630950d432
       system-type: template.istio:1.0
     services:
     - name: styra

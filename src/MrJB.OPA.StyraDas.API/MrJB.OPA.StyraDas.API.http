@@ -1,11 +1,11 @@
 @MrJB.OPA.StyraDas.API_HostAddress = http://localhost:5069
 
-GET {{MrJB.OPA.StyraDas.API_HostAddress}}/todos/
+GET {{MrJB.OPA.StyraDas.API_HostAddress}}/api/security/grid
 Accept: application/json
 
 ###
 
-GET {{MrJB.OPA.StyraDas.API_HostAddress}}/todos/1
+GET {{MrJB.OPA.StyraDas.API_HostAddress}}/api/system/test
 Accept: application/json
 
 ###

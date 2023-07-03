@@ -11,20 +11,20 @@ stringData:
   slp.yaml: |
     discovery:
       name: discovery
-      prefix: /systems/c3199390d3df481099e3a14c900d4dbd
+      prefix: /systems/be73004cea78472da407b1630950d432
       service: styra
     labels:
-      system-id: c3199390d3df481099e3a14c900d4dbd
+      system-id: be73004cea78472da407b1630950d432
       system-type: template.istio:1.0
     services:
     - credentials:
         bearer:
-          token: U7D8FTEps-CDL31dZMdnn4-sJpx-NvP7G9Cu1idk_j0i6e771C4QQ9MdqJPBbdQZ7A-g7YQB_FRsC_7IGCRby9PFCBZKy3lF
+          token: SY9ygbSYJDyzXRDaaXZX6f0Cs3fS9M4BiriLfwQMQ-YgGVtSkvNFUQy3An0WxBXzoaZccJuVQK_w3TjwHniCMk-hnzdXTWrS
       name: styra
       url: https://br99vz.svc.styra.com/v1
     - credentials:
         bearer:
-          token: U7D8FTEps-CDL31dZMdnn4-sJpx-NvP7G9Cu1idk_j0i6e771C4QQ9MdqJPBbdQZ7A-g7YQB_FRsC_7IGCRby9PFCBZKy3lF
+          token: SY9ygbSYJDyzXRDaaXZX6f0Cs3fS9M4BiriLfwQMQ-YgGVtSkvNFUQy3An0WxBXzoaZccJuVQK_w3TjwHniCMk-hnzdXTWrS
       name: styra-bundles
       url: https://br99vz.svc.styra.com/v1/bundles
 
@@ -73,7 +73,7 @@ spec:
     spec:
       containers:
       - name: slp
-        image: "styra/styra-local-plane:0.7.0"
+        image: "styra/styra-local-plane:0.7.2"
         args:
           - "--config-file=/config/slp.yaml"
           - "--addr=0.0.0.0:8080"
