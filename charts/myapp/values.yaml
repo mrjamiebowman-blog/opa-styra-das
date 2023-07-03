@@ -38,6 +38,7 @@ service:
 
 istio:
   enabled: 1
+  prefix: /styradas
   gateway:
     hosts: api.mrjb.local
 
