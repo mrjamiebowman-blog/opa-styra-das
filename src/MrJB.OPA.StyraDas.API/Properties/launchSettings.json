@@ -3,7 +3,7 @@
     "http": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "api/security/grid",
+      "launchUrl": "api/up",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
@@ -21,7 +21,7 @@
     "Docker": {
       "commandName": "Docker",
       "launchBrowser": true,
-      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/api/security/grid",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/api/up",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },

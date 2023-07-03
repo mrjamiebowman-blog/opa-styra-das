@@ -9,3 +9,8 @@ GET {{MrJB.OPA.StyraDas.API_HostAddress}}/api/system/test
 Accept: application/json
 
 ###
+
+GET {{MrJB.OPA.StyraDas.API_HostAddress}}/api/up
+Accept: application/json
+
+###
